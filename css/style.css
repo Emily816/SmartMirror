@@ -1,0 +1,17 @@
+#time {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    font-size: 128px;
+}
+
+#date {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 64px;
+}

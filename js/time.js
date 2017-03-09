@@ -9,12 +9,11 @@ window.onload = function updateClock() {
     // Formatted Time
     var time = hoursTo12(now) + ':' + addLeadingZero(now.getMinutes()) + ':' + addLeadingZero(now.getSeconds());
     // Formatted Date
-    var date = [months[now.getMonth()],
-                now.getDate(),
-                now.getFullYear()].join(' ');
+    var date = months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
 
-    // Set the content of the element with the ID time to the formatted string
-    document.getElementById('time').innerHTML = [date, time].join(' ');
+    // Set the content of the element to the formatted string
+    document.getElementById('date').innerHTML = date;
+    document.getElementById('time').innerHTML = time;
 
     // Call this function again in 1 second.
     setTimeout(updateClock, 1000);
